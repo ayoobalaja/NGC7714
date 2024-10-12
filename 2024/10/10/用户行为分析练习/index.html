@@ -28,7 +28,7 @@
 <meta property="og:image" content="https://&/#47;&#47;public.tableau.com&#47;static&#47;images&#47;_1&#47;_17286494959310&#47;sheet12&#47;1_rss.png">
 <meta property="og:image" content="https://&/#47;&#47;public.tableau.com&#47;static&#47;images&#47;_1&#47;_17286494959310&#47;sheet11&#47;1_rss.png">
 <meta property="article:published_time" content="2024-10-09T16:00:00.000Z">
-<meta property="article:modified_time" content="2024-10-12T07:31:54.176Z">
+<meta property="article:modified_time" content="2024-10-12T08:40:27.306Z">
 <meta property="article:author" content="Irregulator">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://&/#47;&#47;public.tableau.com&#47;static&#47;images&#47;_1&#47;_17286494959310&#47;sheet12&#47;1_rss.png">
@@ -204,10 +204,10 @@
             
             <div class="item-inner">
               <p class="item-category">
-                <a class="category-link" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a>
+                <a class="category-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/">数据分析</a>
               </p>
               <p class="item-title">
-                <a href="/2024/10/10/Landing-NGC7714/" class="title">Landing NGC7714</a>
+                <a href="/2024/10/10/%E7%94%A8%E6%88%B7%E8%A1%8C%E4%B8%BA%E5%88%86%E6%9E%90%E7%BB%83%E4%B9%A0/" class="title">用户行为分析练习</a>
               </p>
               <p class="item-date">
                 <time datetime="2024-10-09T16:00:00.000Z" itemprop="datePublished">2024-10-10</time>
@@ -219,10 +219,10 @@
             
             <div class="item-inner">
               <p class="item-category">
-                <a class="category-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/">数据分析</a>
+                <a class="category-link" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a>
               </p>
               <p class="item-title">
-                <a href="/2024/10/10/%E7%94%A8%E6%88%B7%E8%A1%8C%E4%B8%BA%E5%88%86%E6%9E%90%E7%BB%83%E4%B9%A0/" class="title">用户行为分析练习</a>
+                <a href="/2024/10/10/Landing-NGC7714/" class="title">Landing NGC7714</a>
               </p>
               <p class="item-date">
                 <time datetime="2024-10-09T16:00:00.000Z" itemprop="datePublished">2024-10-10</time>
@@ -299,7 +299,7 @@
 </style>
 
 <details>
-    <summary>数据解释</summary>
+    <summary><u>数据解释</u></summary>
     <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">User_info</span><br><span class="line">    user_id ：用户id</span><br><span class="line">    new_user ：新用户值为<span class="number">1</span>、旧用户值为<span class="number">0</span></span><br><span class="line">    age ：用户年龄</span><br><span class="line">    sex ：用户性别</span><br><span class="line">    market ：用户所在市场级别 （<span class="number">1</span>:直辖市/省会/沿海开放城市, <span class="number">2</span>:地级市, <span class="number">3</span>:小城市/县级市/县, <span class="number">4</span>:较发达乡镇</span><br><span class="line">    device ：用户设备</span><br><span class="line">    operative_system ：设备系统</span><br><span class="line">    source ：用户来源 （广告、搜索、直接）</span><br><span class="line">    total_pages_visited ：浏览页面总数</span><br><span class="line">Home_page </span><br><span class="line">    user_id：用户id</span><br><span class="line">    page：浏览过主页的用户</span><br><span class="line">Listing_page</span><br><span class="line">    user_id：用户id</span><br><span class="line">    page：浏览过列表页的用户</span><br><span class="line">Product_page</span><br><span class="line">    user_id：用户id</span><br><span class="line">    page：浏览过产品详情页的用户</span><br><span class="line">Payment_page </span><br><span class="line">    user_id：用户id</span><br><span class="line">    page： 浏览过支付结算页的用户</span><br><span class="line">Payment_confirmation_page </span><br><span class="line">    user_id：用户id</span><br><span class="line">    page：浏览过确认支付完成页的用户</span><br></pre></td></tr></table></figure>
 </details>
 
@@ -567,6 +567,12 @@
 </tbody></table>
 <p>三种用户来源中，搜索引擎优化（SEO）获取到59.73%的新用户，这说明自然搜索流量是当前最重要的用户来源，SEO策略有效。其次是广告（Ads）渠道，占33.11%，说明付费推广也为网站带来了可观的流量。<br>整体来看，SEO是最关键的流量来源，该平台&#x2F;产品&#x2F;服务应继续加强SEO策略，提升长期的流量增长；同时，该平台&#x2F;产品&#x2F;服务应思考如何提升广告投放、社媒运营、达人推荐等渠道到来的客流增长以及品牌知名度的打响。</p>
 <h4 id="结果可视化-1"><a href="#结果可视化-1" class="headerlink" title="结果可视化"></a>结果可视化</h4><div class='tableauPlaceholder' id='viz1728713754212' style='position: relative'><noscript><a href='#'><img alt='行为数据 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;_1&#47;_17286494959310&#47;sheet11&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='_17286494959310&#47;sheet11' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;_1&#47;_17286494959310&#47;sheet11&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='zh-CN' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1728713754212');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='800px';vizElement.style.height='527px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='1377px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+<h3 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续"></a>未完待续</h3><h4 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h4><ol>
+<li>密度图绘制，观察数据分布</li>
+<li>随机森林模型，分析影响用户支付行为的因素</li>
+</ol>
+
       
     </div>
     <div class="article-footer">
