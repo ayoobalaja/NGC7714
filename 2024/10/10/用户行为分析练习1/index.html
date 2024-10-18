@@ -1,5 +1,15 @@
 <!DOCTYPE html>
 <html lang=zh>
+  <script type="text/javascript">
+    var OriginTitile = document.title,
+        st;
+    document.addEventListener("visibilitychange", function () {
+        document.hidden ? (document.title = "Back to Earth", clearTimeout(st)) : (document.title =
+            "Landing NGC7714", st = setTimeout(function () {
+                document.title = OriginTitile
+            }, 3e3))
+    })
+  </script>
 <head>
   <meta charset="utf-8">
   
@@ -18,12 +28,12 @@
   
   
   <title>用户行为分析练习1 (Mysql,Tableau) | STATION(NGC7714)</title>
-  <meta name="description" content="数据来源：阿里云&#x2F;天池实验室&#x2F;公共数据集  数据下载 分析需求  识别用户画像，帮助理解客户特征及需求； 漏斗分析，识别异常环节，帮助优化流程。  结论小结  用户画像：用户群体以发达城市中20-30年龄段、女性为主； SEO为吸引新客户的主要渠道； 用户流失率从主页到产品页平均流失25%，从产品页到支付页流失了42.74%的用户，用户转化存在阻碍，需要调整策略。     su">
+  <meta name="description" content="数据来源：Kaggle 数据下载 分析需求  识别用户画像，帮助理解客户特征及需求； 漏斗分析，识别异常环节，帮助优化流程。  结论小结  用户画像：用户群体以发达城市中20-30年龄段、女性为主； SEO为吸引新客户的主要渠道； 用户流失率从主页到产品页平均流失25%，从产品页到支付页流失了42.74%的用户，用户转化存在阻碍，需要调整策略。     summary {     font-siz">
 <meta property="og:type" content="article">
 <meta property="og:title" content="用户行为分析练习1 (Mysql,Tableau)">
 <meta property="og:url" content="http://example.com/2024/10/10/%E7%94%A8%E6%88%B7%E8%A1%8C%E4%B8%BA%E5%88%86%E6%9E%90%E7%BB%83%E4%B9%A01/index.html">
 <meta property="og:site_name" content="STATION(NGC7714)">
-<meta property="og:description" content="数据来源：阿里云&#x2F;天池实验室&#x2F;公共数据集  数据下载 分析需求  识别用户画像，帮助理解客户特征及需求； 漏斗分析，识别异常环节，帮助优化流程。  结论小结  用户画像：用户群体以发达城市中20-30年龄段、女性为主； SEO为吸引新客户的主要渠道； 用户流失率从主页到产品页平均流失25%，从产品页到支付页流失了42.74%的用户，用户转化存在阻碍，需要调整策略。     su">
+<meta property="og:description" content="数据来源：Kaggle 数据下载 分析需求  识别用户画像，帮助理解客户特征及需求； 漏斗分析，识别异常环节，帮助优化流程。  结论小结  用户画像：用户群体以发达城市中20-30年龄段、女性为主； SEO为吸引新客户的主要渠道； 用户流失率从主页到产品页平均流失25%，从产品页到支付页流失了42.74%的用户，用户转化存在阻碍，需要调整策略。     summary {     font-siz">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://&/#47;&#47;public.tableau.com&#47;static&#47;images&#47;_1&#47;_17286494959310&#47;4&#47;1_rss.png">
 <meta property="article:published_time" content="2024-10-09T16:00:00.000Z">
@@ -61,7 +71,7 @@
         </a>
         <h2 id="name" class="hidden-xs hidden-sm">Irregulator</h2>
         <h3 id="title" class="hidden-xs hidden-sm hidden-md"></h3>
-        <small id="location" class="text-muted hidden-xs hidden-sm">NGC7714</small>
+        <small id="location" class="text-muted hidden-xs hidden-sm">NGC7714正在开拓中...</small>
       </div>
       
       <div class="search" id="search-form-wrap">
@@ -167,11 +177,11 @@
   <div class="slimContent">
     
       <div class="widget">
-    <h3 class="widget-title">Welcome Home</h3>
+    <h3 class="widget-title">Administrator</h3>
     <div class="widget-body">
         <div id="board">
             <div class="content">
-                <p>NGC7714正在开拓中...</p>
+                <img src="/images/IMG_7069.JPG" width="50%" height="50%">
             </div>
         </div>
     </div>
@@ -195,16 +205,6 @@
     
       
   <div class="widget">
-    <h3 class="widget-title">归档</h3>
-    <div class="widget-body">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/10/">十月 2024</a><span class="archive-list-count">4</span></li></ul>
-    </div>
-  </div>
-
-
-    
-      
-  <div class="widget">
     <h3 class="widget-title">最新文章</h3>
     <div class="widget-body">
       <ul class="recent-post-list list-unstyled no-thumbnail">
@@ -216,7 +216,7 @@
                 <a class="category-link" href="/categories/Hexo/">Hexo</a>
               </p>
               <p class="item-title">
-                <a href="/2024/10/17/%E5%8D%9A%E5%AE%A2%E4%B8%AA%E6%80%A7%E5%8C%96%E8%AE%B0%E5%BD%95/" class="title">博客优化记录</a>
+                <a href="/2024/10/17/%E5%8D%9A%E5%AE%A2%E8%A3%85%E4%BF%AE%E8%AE%B0%E5%BD%95/" class="title">博客装修记录</a>
               </p>
               <p class="item-date">
                 <time datetime="2024-10-17T13:33:51.000Z" itemprop="datePublished">2024-10-17</time>
@@ -243,10 +243,10 @@
             
             <div class="item-inner">
               <p class="item-category">
-                <a class="category-link" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a>
+                <a class="category-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/">数据分析</a>
               </p>
               <p class="item-title">
-                <a href="/2024/10/10/Landing-NGC7714/" class="title">Landing NGC7714</a>
+                <a href="/2024/10/10/%E7%94%A8%E6%88%B7%E8%A1%8C%E4%B8%BA%E5%88%86%E6%9E%90%E7%BB%83%E4%B9%A01/" class="title">用户行为分析练习1 (Mysql,Tableau)</a>
               </p>
               <p class="item-date">
                 <time datetime="2024-10-09T16:00:00.000Z" itemprop="datePublished">2024-10-10</time>
@@ -258,10 +258,10 @@
             
             <div class="item-inner">
               <p class="item-category">
-                <a class="category-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/">数据分析</a>
+                <a class="category-link" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a>
               </p>
               <p class="item-title">
-                <a href="/2024/10/10/%E7%94%A8%E6%88%B7%E8%A1%8C%E4%B8%BA%E5%88%86%E6%9E%90%E7%BB%83%E4%B9%A01/" class="title">用户行为分析练习1 (Mysql,Tableau)</a>
+                <a href="/2024/10/10/Landing-NGC7714/" class="title">Landing NGC7714</a>
               </p>
               <p class="item-date">
                 <time datetime="2024-10-09T16:00:00.000Z" itemprop="datePublished">2024-10-10</time>
@@ -316,7 +316,7 @@
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <p><strong>数据来源</strong>：阿里云&#x2F;天池实验室&#x2F;公共数据集  <a href="/downloads/%E7%94%B5%E5%95%86%E7%94%A8%E6%88%B7%E8%A1%8C%E4%B8%BA.xlsx">数据下载</a></p>
+        <p><strong>数据来源</strong>：Kaggle <a href="/downloads/%E7%94%B5%E5%95%86%E7%94%A8%E6%88%B7%E8%A1%8C%E4%B8%BA.xlsx">数据下载</a></p>
 <p><strong>分析需求</strong></p>
 <ol>
 <li>识别用户画像，帮助理解客户特征及需求；</li>
@@ -606,7 +606,7 @@
 </tr>
 </tbody></table>
 <p>三种用户来源中，搜索引擎优化（SEO）获取到59.73%的新用户，这说明自然搜索流量是当前最重要的用户来源，SEO策略有效。其次是广告（Ads）渠道，占33.11%，说明付费推广也为网站带来了可观的流量。<br>整体来看，SEO是最关键的流量来源，该平台&#x2F;产品&#x2F;服务应继续加强SEO策略，提升长期的流量增长；同时，该平台&#x2F;产品&#x2F;服务应思考如何提升广告投放、社媒运营、达人推荐等渠道到来的客流增长以及品牌知名度的打响。</p>
-<h3 id="Python的应用-随机森林模型"><a href="#Python的应用-随机森林模型" class="headerlink" title="Python的应用-随机森林模型"></a>Python的应用-随机森林模型</h3><h4 id=""><a href="#" class="headerlink" title=""></a><a href="/2024/10/11/%E7%94%A8%E6%88%B7%E8%A1%8C%E4%B8%BA%E5%88%86%E6%9E%90%E7%BB%83%E4%B9%A02/" title="用户行为分析练习2 (Python随机森林模型)">用户行为分析练习2 (Python随机森林模型)</a></h4>
+<h2 id="Python的应用-随机森林模型"><a href="#Python的应用-随机森林模型" class="headerlink" title="Python的应用-随机森林模型"></a>Python的应用-随机森林模型</h2><h4 id=""><a href="#" class="headerlink" title=""></a><a href="/2024/10/11/%E7%94%A8%E6%88%B7%E8%A1%8C%E4%B8%BA%E5%88%86%E6%9E%90%E7%BB%83%E4%B9%A02/" title="用户行为分析练习2 (Python随机森林模型)">用户行为分析练习2 (Python随机森林模型)</a></h4>
       
     </div>
     <div class="article-footer">
