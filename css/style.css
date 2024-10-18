@@ -34,6 +34,7 @@ html {
 
 body {
   margin: 0;
+  background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
 }
 
 article,
@@ -4727,7 +4728,7 @@ a.label:focus {
 
 .panel {
   margin-bottom: 21px;
-  background-color: #fff;
+  background: rgba(255,255,255,0);
   border: 1px solid #f2f2f2;
 }
 
@@ -5651,11 +5652,11 @@ pre code {
 /* Hide for mobile, show later */
 
 .header {
-  background-color: #fbfbfb;
+  background: rgba(255,255,255,0);
 }
 
 .sidebar {
-  background-color: #fdfdfd;
+  background: rgba(255,255,255,.1);
 }
 
 .sidebar .slimContent {
@@ -5665,7 +5666,9 @@ pre code {
 .main {
   position: relative;
   min-height: 100vh;
-  padding: 15px;
+  padding: 50px;
+  background-color: #fbfbfb;
+  background: rgba(255,255,255,.2);
 }
 
 .main:before,
