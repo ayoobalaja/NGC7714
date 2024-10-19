@@ -1,15 +1,5 @@
 <!DOCTYPE html>
 <html lang=zh>
-  <script type="text/javascript">
-    var OriginTitile = document.title,
-        st;
-    document.addEventListener("visibilitychange", function () {
-        document.hidden ? (document.title = "Back to Earth", clearTimeout(st)) : (document.title =
-            "Landing NGC7714", st = setTimeout(function () {
-                document.title = OriginTitile
-            }, 3e3))
-    })
-  </script>
 <head>
   <meta charset="utf-8">
   
@@ -27,18 +17,21 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>博客装修记录 | STATION(NGC7714)</title>
-  <meta name="description" content="在主题hexo-pure的基础上自定义自己的博客主页，除了在_config.中修改以外，还可以自行修改代码以装修个性化主页。  目录1.背景色2.首页布局   1.修改背景色 在 https:&#x2F;&#x2F;webgradients.com 中获取背景色并copy css 在style.css中，将 12body &#123;  margin: 0; 改为 1234body &#123;  margin: 0">
+  <title>Hexo-pure装修记录 | STATION(NGC7714)</title>
+  <meta name="description" content="在主题hexo-pure的基础上自定义自己的博客主页，除了在_config.中修改以外，还可以自行修改代码以装修个性化主页。  目录1.添加渐变背景色2.修改首页布局3.隐藏底部主题标注4.删除“本文链接”和“版权声明   1.添加渐变背景色 在 https:&#x2F;&#x2F;webgradients.com 中获取背景色并copy css 在style.css中，将 12body &#123;  margin">
 <meta property="og:type" content="article">
-<meta property="og:title" content="博客装修记录">
+<meta property="og:title" content="Hexo-pure装修记录">
 <meta property="og:url" content="http://example.com/2024/10/17/%E5%8D%9A%E5%AE%A2%E8%A3%85%E4%BF%AE%E8%AE%B0%E5%BD%95/index.html">
 <meta property="og:site_name" content="STATION(NGC7714)">
-<meta property="og:description" content="在主题hexo-pure的基础上自定义自己的博客主页，除了在_config.中修改以外，还可以自行修改代码以装修个性化主页。  目录1.背景色2.首页布局   1.修改背景色 在 https:&#x2F;&#x2F;webgradients.com 中获取背景色并copy css 在style.css中，将 12body &#123;  margin: 0; 改为 1234body &#123;  margin: 0">
+<meta property="og:description" content="在主题hexo-pure的基础上自定义自己的博客主页，除了在_config.中修改以外，还可以自行修改代码以装修个性化主页。  目录1.添加渐变背景色2.修改首页布局3.隐藏底部主题标注4.删除“本文链接”和“版权声明   1.添加渐变背景色 在 https:&#x2F;&#x2F;webgradients.com 中获取背景色并copy css 在style.css中，将 12body &#123;  margin">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/images/screenshot1.png">
+<meta property="og:image" content="http://example.com/images/screenshot2.png">
 <meta property="article:published_time" content="2024-10-17T13:33:51.000Z">
 <meta property="article:modified_time" content="2024-10-17T13:33:51.000Z">
 <meta property="article:author" content="Irregulator">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/images/screenshot1.png">
   <!-- Canonical links -->
   <link rel="canonical" href="http://example.com/2024/10/17/%E5%8D%9A%E5%AE%A2%E8%A3%85%E4%BF%AE%E8%AE%B0%E5%BD%95/index.html">
   
@@ -214,7 +207,7 @@
                 <a class="category-link" href="/categories/Hexo/">Hexo</a>
               </p>
               <p class="item-title">
-                <a href="/2024/10/17/%E5%8D%9A%E5%AE%A2%E8%A3%85%E4%BF%AE%E8%AE%B0%E5%BD%95/" class="title">博客装修记录</a>
+                <a href="/2024/10/17/%E5%8D%9A%E5%AE%A2%E8%A3%85%E4%BF%AE%E8%AE%B0%E5%BD%95/" class="title">Hexo-pure装修记录</a>
               </p>
               <p class="item-date">
                 <time datetime="2024-10-17T13:33:51.000Z" itemprop="datePublished">2024-10-17</time>
@@ -241,10 +234,10 @@
             
             <div class="item-inner">
               <p class="item-category">
-                <a class="category-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/">数据分析</a>
+                <a class="category-link" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a>
               </p>
               <p class="item-title">
-                <a href="/2024/10/10/%E7%94%A8%E6%88%B7%E8%A1%8C%E4%B8%BA%E5%88%86%E6%9E%90%E7%BB%83%E4%B9%A01/" class="title">用户行为分析练习1 (Mysql,Tableau)</a>
+                <a href="/2024/10/10/Landing-NGC7714/" class="title">Landing NGC7714</a>
               </p>
               <p class="item-date">
                 <time datetime="2024-10-09T16:00:00.000Z" itemprop="datePublished">2024-10-10</time>
@@ -256,10 +249,10 @@
             
             <div class="item-inner">
               <p class="item-category">
-                <a class="category-link" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a>
+                <a class="category-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/">数据分析</a>
               </p>
               <p class="item-title">
-                <a href="/2024/10/10/Landing-NGC7714/" class="title">Landing NGC7714</a>
+                <a href="/2024/10/10/%E7%94%A8%E6%88%B7%E8%A1%8C%E4%B8%BA%E5%88%86%E6%9E%90%E7%BB%83%E4%B9%A01/" class="title">用户行为分析练习1 (Mysql,Tableau)</a>
               </p>
               <p class="item-date">
                 <time datetime="2024-10-09T16:00:00.000Z" itemprop="datePublished">2024-10-10</time>
@@ -287,7 +280,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      博客装修记录
+      Hexo-pure装修记录
     </h1>
   
 
@@ -314,26 +307,47 @@
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <p>在主题hexo-pure的基础上自定义自己的博客主页，除了在_config.中修改以外，还可以自行修改代码以装修个性化主页。</p>
+        <p>在主题hexo-pure的基础上自定义自己的博客主页，除了在<code>_config.</code>中修改以外，还可以自行修改代码以装修个性化主页。</p>
 <hr>
-<h4 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h4><p><strong><a href="#section1">1.背景色</a></strong><br><strong><a href="#section2">2.首页布局</a></strong></p>
+<h4 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h4><p><strong><a href="#section1">1.添加渐变背景色</a></strong><br><strong><a href="#section2">2.修改首页布局</a></strong><br><strong><a href="#section3">3.隐藏底部主题标注</a></strong><br><strong><a href="#section4">4.删除“本文链接”和“版权声明</a></strong></p>
 <hr>
-<h4 id="section1"> 1.修改背景色</h4>
-在 https://webgradients.com 中获取背景色并copy css
-在style.css中，将
+<h4 id="section1"> 1.添加渐变背景色</h4>
+在 <a target="_blank" rel="noopener" href="https://webgradients.com" title="Webgradients">https://webgradients.com</a> 中获取背景色并<code>copy css</code>
+在<code>style.css</code>中，将
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
 改为
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">background-image</span>: <span class="built_in">linear-gradient</span>(-<span class="number">20deg</span>, <span class="number">#e9defa</span> <span class="number">0%</span>, <span class="number">#fbfcdb</span> <span class="number">100%</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-再分别修改header,sidebar的透明度，
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* .4 为透明度，如果设置为0就会是完全透明*/</span></span><br><span class="line"><span class="selector-class">.header</span> &#123;</span><br><span class="line">  <span class="attribute">background</span>: <span class="built_in">rgba</span>(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,.<span class="number">4</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.sidebar</span> &#123;</span><br><span class="line">  <span class="attribute">background</span>: <span class="built_in">rgba</span>(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,.<span class="number">1</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+再分别修改<code>header</code>,<code>sidebar</code>的透明度，
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* .4为透明度，如果设置为0就会是完全透明*/</span></span><br><span class="line"><span class="selector-class">.header</span> &#123;</span><br><span class="line">  <span class="attribute">background</span>: <span class="built_in">rgba</span>(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,.<span class="number">4</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.sidebar</span> &#123;</span><br><span class="line">  <span class="attribute">background</span>: <span class="built_in">rgba</span>(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,.<span class="number">1</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h4 id="section2"> 2.修改首页布局</h4>
+在原首页布局中，文章列表按时间顺序排序，从内容上看比较杂乱无章，如果能按文章分类排列，在每个分类内再按时间排序，则更有条理。因此，修改<code>layout</code>的<code>index.ejs</code>，将
 
-<p>在原首页布局中，文章列表按时间顺序排序，从内容上看比较杂乱无章，如果能按文章分类排列，在每个分类内再按时间排序，则更有条理。因此，修改layout的index.ejs，将</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">article</span> <span class="attr">class</span>=<span class="string">&quot;article article-type-&lt;%= post.layout %&gt;&quot;</span> <span class="attr">itemscope</span> <span class="attr">itemtype</span>=<span class="string">&quot;http://schema.org/BlogPosting&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;article-header&quot;</span>&gt;</span></span><br><span class="line">    &lt;%- partial(&#x27;post/title&#x27;, &#123;class_name: &#x27;article-title&#x27;&#125;) %&gt;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  &lt;% if (post.excerpt)&#123; %&gt;</span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;article-entry text-muted&quot;</span> <span class="attr">itemprop</span>=<span class="string">&quot;description&quot;</span>&gt;</span></span><br><span class="line">    &lt;%- post.excerpt %&gt;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  &lt;% &#125; %&gt;</span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">&quot;article-meta&quot;</span>&gt;</span></span><br><span class="line">    &lt;%- partial(&#x27;post/date&#x27;, &#123;class_name: &#x27;article-date&#x27;, date_format: &#x27;MM月DD日&#x27;&#125;) %&gt;</span><br><span class="line">    &lt;%- partial(&#x27;post/category&#x27;) %&gt;</span><br><span class="line">    &lt;%- partial(&#x27;post/tag&#x27;) %&gt;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">article</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
 <p>改为</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;article-body&quot;</span>&gt;</span></span><br><span class="line">    &lt;% site.categories.each(function(item)&#123; %&gt;</span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;panel panel-default b-no&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;panel-heading&quot;</span> <span class="attr">role</span>=<span class="string">&quot;tab&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h3</span> <span class="attr">class</span>=<span class="string">&quot;panel-title&quot;</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">a</span> <span class="attr">data-toggle</span>=<span class="string">&quot;collapse&quot;</span> <span class="attr">href</span>=<span class="string">&quot;#collapse&lt;%= item.name %&gt;&quot;</span> <span class="attr">aria-expanded</span>=<span class="string">&quot;true&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;icon icon-folder text-active&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;icon icon-folder-open text&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">            &lt;%= item.name %&gt;</span><br><span class="line">          <span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">middle</span> <span class="attr">class</span>=<span class="string">&quot;text-muted&quot;</span>&gt;</span>(&lt;%= item.posts.length %&gt;)<span class="tag">&lt;/<span class="name">middle</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;collapse&lt;%= item.name %&gt;&quot;</span> <span class="attr">class</span>=<span class="string">&quot;panel-collapse collapse in&quot;</span> <span class="attr">role</span>=<span class="string">&quot;tabpanel&quot;</span> <span class="attr">aria-labelledby</span>=<span class="string">&quot;heading&lt;%= item.name %&gt;&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;panel-body&quot;</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;collection&quot;</span>&gt;</span></span><br><span class="line">            &lt;% item.posts.each(function(post)&#123; %&gt;</span><br><span class="line">              &lt;%- partial(&#x27;_partial/item-post&#x27;, &#123;post: post, type: &#x27;link&#x27;&#125;) %&gt;</span><br><span class="line">            &lt;% &#125;) %&gt;</span><br><span class="line">          <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    &lt;% &#125;) %&gt;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>首页修改为以分类显示后，可能会出现字体大小、颜色不合适之类的问题，只需要在css中修改panel的设置即可。</p>
+<p>首页修改为以分类显示后，可能会出现字体大小、颜色不合适之类的问题，只需要在<code>css</code>中修改<code>panel</code>的设置即可。</p>
+<h4 id="section3"> 3.隐藏底部主题标注</h4>
+如果想隐藏页面左下角的Theme by
+<br>
+<img src="/images/screenshot1.png" alt="Theme by" title="Theme by" width="30%" height="30%">  
+<br>
+到<code>layout</code>的<code>footer</code>删除或按需自行修改:
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;publishby&quot;</span>&gt;</span></span><br><span class="line">        &lt;%= __(&#x27;copyright.theme_by&#x27;) %&gt; <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://github.com/cofess&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span>&gt;</span> cofess <span class="tag">&lt;/<span class="name">a</span>&gt;</span>&lt;%= __(&#x27;copyright.base_on&#x27;) %&gt; <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://github.com/cofess/hexo-theme-pure&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span>&gt;</span>pure<span class="tag">&lt;/<span class="name">a</span>&gt;</span>.</span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+删除后就不会再显示
+<br>
+<img src="/images/screenshot2.png" alt="Theme by2" title="Theme by" width="30%" height="30%">
+<br>
+要注意，主题的<code>_config.</code>中，copyright要设置true才会显示<code>© 2024 XXX</code>
+
+<h4 id="section4"> 4.删除“本文链接”和“版权声明”</h4>
+参考 <a target="_blank" rel="noopener" href="https://github.com/cofess/hexo-theme-pure/issues/128" title="‘本文链接’和‘版权声明’取消不掉 #128">‘本文链接’和‘版权声明’取消不掉 #128</a>，修改<code>layout</code>的<code>copyright</code>。
+
+<p>删除或按需修改：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">blockquote</span> <span class="attr">class</span>=<span class="string">&quot;mt-2x&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">ul</span> <span class="attr">class</span>=<span class="string">&quot;post-copyright list-unstyled&quot;</span>&gt;</span></span><br><span class="line">    &lt;% if (post.permalink) &#123; %&gt;</span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;post-copyright-link hidden-xs&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">strong</span>&gt;</span>本文链接：<span class="tag">&lt;/<span class="name">strong</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;&lt;%- post.permalink %&gt;&quot;</span> <span class="attr">title</span>=<span class="string">&quot;&lt;%= post.title %&gt;&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span> <span class="attr">rel</span>=<span class="string">&quot;external&quot;</span>&gt;</span>&lt;%- decodeURIComponent(post.permalink) %&gt;<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    &lt;% &#125; %&gt;</span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;post-copyright-license&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">strong</span>&gt;</span>版权声明： <span class="tag">&lt;/<span class="name">strong</span>&gt;</span> 本博客所有文章除特别声明外，均采用 <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;http://creativecommons.org/licenses/by/4.0/deed.zh&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span> <span class="attr">rel</span>=<span class="string">&quot;external&quot;</span>&gt;</span>CC BY 4.0 CN协议<span class="tag">&lt;/<span class="name">a</span>&gt;</span> 许可协议。转载请注明出处！</span><br><span class="line">    <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">blockquote</span>&gt;</span></span><br><span class="line">&lt;% if(theme.profile &amp;&amp; theme.profile.enabled) &#123; %&gt;</span><br><span class="line">&lt;% var profile = theme.profile; %&gt;</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;panel panel-default panel-badger&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;panel-body&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">figure</span> <span class="attr">class</span>=<span class="string">&quot;media&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;media-left&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;&lt;%= profile.follow %&gt;&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span> <span class="attr">class</span>=<span class="string">&quot;img-burn thumb-sm visible-lg&quot;</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;&lt;%= ( profile.gravatar ? gravatar(profile.gravatar, 128) : url_for(profile.avatar)) %&gt;&quot;</span> <span class="attr">class</span>=<span class="string">&quot;img-rounded w-full&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;media-body&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h3</span> <span class="attr">class</span>=<span class="string">&quot;media-heading&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;&lt;%= profile.follow %&gt;&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;text-dark&quot;</span>&gt;</span>&lt;%= profile.author %&gt;<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">small</span> <span class="attr">class</span>=<span class="string">&quot;ml-1x&quot;</span>&gt;</span>&lt;%= profile.author_title %&gt;<span class="tag">&lt;/<span class="name">small</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span>&gt;</span>&lt;%= profile.author_description %&gt;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">figure</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure>
+<br>
+
 <p>————持续更新————</p>
 
       
@@ -359,7 +373,6 @@
     	
         &copy; 2024 Irregulator
         
-    </div>
 </footer>
   <script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
 <script>
